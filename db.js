@@ -25,7 +25,7 @@ db.exec(`
         id      INTEGER PRIMARY KEY AUTOINCREMENT,
         hotel_id    INTEGER NIT NULL,
         room_number TEXT NOT NULL,
-        type        TEXT NIT NULL,
+        type        TEXT NOT NULL,
         price_per_night     REAL NOT NULL,
         FOREIGN KEY (hotel_id) REFERENCES hotels(id)
     );
